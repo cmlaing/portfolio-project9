@@ -10,7 +10,7 @@ Mobile-first Design Layout for Project 9 Treehouse "Capstone Portfolio"
     box-sizing: border-box;
     margin: 0;
     padding: 0;  
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
     
 
 }
@@ -19,11 +19,22 @@ body {
     height: 100vh;
 
 }
-
-.bottom-border {
-    border-bottom: 2px solid #cccccc;
-    padding-bottom: 0.5rem;
+h2 {
+    font-family: 'Exo 2', sans-serif;
 }
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Image Resize */
+
+.icon {
+    height: 4rem;
+    width: auto;
+}
+
+
 
 
 /* Grid Stuff */
@@ -42,6 +53,7 @@ body {
 header {
     grid-area: head;
     background-color: pink;
+    
 }
 
 nav {
@@ -58,6 +70,18 @@ main {
 #welcome {
     background-color:aliceblue;
 
+}
+
+.welcome-images {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mid {
+    align-self: center;
 }
 
 #portfolio {
@@ -79,6 +103,7 @@ main {
 footer {
     grid-area: footer;
     background-color: pink;
+    height: 50px;
 }
 
 
