@@ -4,27 +4,62 @@ Mobile-first Design Layout for Project 9 Treehouse "Capstone Portfolio"
 ========================================================================== 
 */
 
+/*===========================
+Color Palette 
+space cadet 21295c (dark indigo)
+light gray cccccc (main background)
+blue saphire 065a82 (darker accent: list item)
+cg blue 1c7293 (lighter accent: [header, nav, footer BG], list item)
+alice blue e6ebef (lighter than the grey)
+white (accent: text)
+
+===========================*/
+
+
 /* Universal Attributes */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;  
-    
-    
 
 }
+
+
 
 body {
     height: 100vh;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
 
 }
+
+
+
+/* utilities */
+
 h2 {
     font-family: 'Exo 2', sans-serif;
+    color: #21295c;
 }
 
-p {
-    font-family: 'Lato', sans-serif;
+/* links */
+a,
+a:visited {
+    color: #065a82;
+
+}
+
+a:hover {
+    color: white;
+    background-color: rgba(28, 114, 147, 0.4);
+    border-radius: 5px;
+}
+
+.right-align {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 /* Image Resize */
@@ -32,9 +67,31 @@ p {
 .icon {
     height: 4rem;
     width: auto;
+    cursor: zoom-in;
 }
 
 
+/* skew slope to the right */
+
+.skew-r{
+    transform: skew(10deg) rotate(2deg);
+  
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* skew slope to the left */
+.skew-l{
+    transform: skew(-10deg) rotate(-2deg);
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
 
 
 /* Grid Stuff */
@@ -42,7 +99,7 @@ p {
 .grid-container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 60px 70px auto;
+    grid-template-rows: 20px 70px auto;
     grid-template-areas: "head"
                          "nav"
                          "main"
@@ -52,23 +109,27 @@ p {
 
 header {
     grid-area: head;
-    background-color: pink;
+    background-color: #1c7293;
+    color: white;
     
 }
 
 nav {
     grid-area: nav;
-    background-color: rosybrown;
+    background-color: #1c7293;
+    color: white;
 }
 
 /* main content */
 
 main {
     grid-area: main;
+    background-color: #e6ebef;
+    color: #21295c;
 }
 
 #welcome {
-    background-color:aliceblue;
+   
 
 }
 
@@ -83,27 +144,63 @@ main {
 .mid {
     align-self: center;
 }
+.center-icon {
+    margin: 15px;
+}
 
 #portfolio {
-    background-color:aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0.5rem;
 }
 
 #bio {
-    background-color:blanchedalmond;
+    
 }
+
+/* Skills */
 
 #skills {
-    background-color:cadetblue;
+    
 }
+ul.skills {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #065a82;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+
+.skills li:nth-child(odd) {
+    background: #21295c;
+  }
 
 #contact {
-    background-color:skyblue;
+    
 }
 
 footer {
     grid-area: footer;
-    background-color: pink;
+    background-color: #1c7293;
+    color: white;
     height: 50px;
+    margin-top: auto;
 }
 
 
@@ -113,6 +210,16 @@ Media Queries for Tablet and Desktop views
 ========================================================================== 
 */
 
+/* --------------------------- 700px+ Wide Screens */
+
+@media screen and (min-width: 700px){
+    .card {
+        width: calc(50% - 20px); 
+    }
+
+}
+
+
 /* --------------------------- 1024px+ Wide Screens */
 
 @media screen and (min-width: 1024px){
@@ -120,7 +227,7 @@ Media Queries for Tablet and Desktop views
     .grid-container {
         display: grid;
         grid-template-columns: 80px 1fr; /* nav is 80px, main is 1fr */
-        grid-template-rows: 60px 1fr; /*header is 60px, rest is 1fr */
+        grid-template-rows: 30px 1fr; /*header is 60px, rest is 1fr */
         grid-template-areas: "head head"
                              "nav main"
                              "footer footer";
@@ -128,10 +235,10 @@ Media Queries for Tablet and Desktop views
     }
 
     .header-container {
-        width: 99%;
+        width: 100%;
     }
     main {
-        width: 99%;
+        width: 100%;
     }
 
 
@@ -142,3 +249,8 @@ Media Queries for Tablet and Desktop views
         align-items: flex-start;
         justify-content: flex-start;
     }
+
+    .card {
+        width: calc(30% - 20px); 
+    }
+}
