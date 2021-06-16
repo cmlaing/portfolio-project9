@@ -71,7 +71,7 @@ a:hover {
 }
 
 
-/* skew slope to the right */
+/* ? skew slope to the right */
 
 .skew-r{
     transform: skew(10deg) rotate(2deg);
@@ -120,7 +120,9 @@ nav {
     color: white;
 }
 
-/* main content */
+/*==================================
+    Main Content
+ ==================================*/
 
 main {
     grid-area: main;
