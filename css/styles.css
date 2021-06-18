@@ -81,7 +81,7 @@ nav a:hover {
 a.offset {
     display: block;
     position: relative;
-    top: -350px;
+    top: -400px;
     visibility: hidden;
 }
 
@@ -106,27 +106,7 @@ a.offset {
 }
 
 
-/* ? skew slope to the right */
 
-.skew-r{
-    transform: skew(10deg) rotate(2deg);
-  
-    width: 100%;
-    margin-left: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-/* skew slope to the left */
-.skew-l{
-    transform: skew(-10deg) rotate(-2deg);
-    width: 100%;
-    margin-left: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
 
 
 /* Grid Stuff */
@@ -161,24 +141,28 @@ nav {
 
 main {
     grid-area: main;
-    background-color: #e6ebef;
+    background-color: white;
     color: #21295c;
 }
 
-#welcome {
+#welcome p {
+    color: white;
    
 
 }
 
 .jumbotron {
-    background-image: linear-gradient(#1c7293, #e6ebef);
+    max-height: 300px;
+    background: url(../img/banner.jpg);
     margin-top: 0;
+    padding-top: 50px;
     text-align: center;
 
 }
 
 .jumbotron h1 {
     margin: 0;
+    line-height: 1.5rem;
 }
 
 .welcome-images {
@@ -195,6 +179,8 @@ main {
 .center-icon {
     margin: 15px;
 }
+
+
 
 #portfolio {
     display: flex;
@@ -311,7 +297,8 @@ Media Queries for Tablet and Desktop views
     }
 
     .jumbotron {
-        height: 400px;
+        height: 500px;
+        
     }
 
     .card {
@@ -326,5 +313,12 @@ Media Queries for Tablet and Desktop views
         height: auto;
         box-shadow: 5px 5px #1c7293;
         margin: 0 auto;
+    }
+
+    .pair {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding-top: 20px;
     }
 }
