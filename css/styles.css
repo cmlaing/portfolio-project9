@@ -38,9 +38,19 @@ body {
 
 /* utilities */
 
+h1 {
+    color: white;
+}
+
 h2 {
     font-family: 'Exo 2', sans-serif;
     color: #21295c;
+    padding: 5px;
+}
+
+p {
+    padding: 5px;
+    margin: 2px;
 }
 
 /* links */
@@ -54,7 +64,27 @@ a:hover {
     color: white;
     background-color: rgba(28, 114, 147, 0.4);
     border-radius: 5px;
+    text-decoration: none;
 }
+
+nav a,
+nav a:visited, 
+nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* offset navigation target */
+
+
+
+a.offset {
+    display: block;
+    position: relative;
+    top: -350px;
+    visibility: hidden;
+}
+
 
 .right-align {
     text-align: right;
@@ -68,6 +98,11 @@ a:hover {
     height: 4rem;
     width: auto;
     cursor: zoom-in;
+}
+
+.project-img {
+    width: 200px;
+    height: auto;
 }
 
 
@@ -135,6 +170,17 @@ main {
 
 }
 
+.jumbotron {
+    background-image: linear-gradient(#1c7293, #e6ebef);
+    margin-top: 0;
+    text-align: center;
+
+}
+
+.jumbotron h1 {
+    margin: 0;
+}
+
 .welcome-images {
     display: flex;
     flex-wrap: nowrap;
@@ -166,18 +212,24 @@ main {
     padding: 0.5rem;
 }
 
-#bio {
+#bio,
+#skills,
+#contact {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
     
 }
 
 /* Skills */
 
-#skills {
-    
-}
+
 ul.skills {
     padding: 0;
     text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
   }
   
   .skills li {
@@ -193,9 +245,7 @@ ul.skills {
     background: #21295c;
   }
 
-#contact {
-    
-}
+
 
 footer {
     grid-area: footer;
@@ -219,6 +269,11 @@ Media Queries for Tablet and Desktop views
         width: calc(50% - 20px); 
     }
 
+    .project-img {
+        width: 350px;
+        height: auto;
+    }
+
 }
 
 
@@ -229,7 +284,7 @@ Media Queries for Tablet and Desktop views
     .grid-container {
         display: grid;
         grid-template-columns: 80px 1fr; /* nav is 80px, main is 1fr */
-        grid-template-rows: 30px 1fr; /*header is 60px, rest is 1fr */
+        grid-template-rows: 30px 1fr; /*header is 30px, rest is 1fr */
         grid-template-areas: "head head"
                              "nav main"
                              "footer footer";
@@ -238,9 +293,12 @@ Media Queries for Tablet and Desktop views
 
     .header-container {
         width: 100%;
+        overflow-x: hidden;
     }
     main {
         width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
 
@@ -252,7 +310,21 @@ Media Queries for Tablet and Desktop views
         justify-content: flex-start;
     }
 
+    .jumbotron {
+        height: 400px;
+    }
+
     .card {
-        width: calc(30% - 20px); 
+        width: calc(50% - 20px);
+        height: auto;
+        margin: 20px;
+        text-align: center;
+
+    }
+    .project-img {
+        width: 400px;
+        height: auto;
+        box-shadow: 5px 5px #1c7293;
+        margin: 0 auto;
     }
 }

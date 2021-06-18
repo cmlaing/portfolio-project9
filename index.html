@@ -23,18 +23,37 @@
 
 <header>
     <div class="header-container">
-    header stuff
+    Crystal Laing
     </div>
 </header>
     <!-- todo Navigation-->
     
     <nav>
-        navigation stuff
-        <a href="#top"><img src="img/Heart-Floral-Frame.svg" class="icon"></a>
-        <a href="#portfolio"><img src="img/Heart-Floral-Frame.svg" class="icon"></a>
-        <a href="#bio"><img src="img/Heart-Floral-Frame.svg" class="icon"></a>
-        <a href="#skills"><img src="img/Heart-Floral-Frame.svg" class="icon"></a>
-        <a href="#contact"><img src="img/Heart-Floral-Frame.svg" class="icon"></a>
+        
+
+        
+        <a href="#top">
+         
+
+        
+        <a href="#portfolio">
+            Portfolio
+            <img src="img/Heart-Floral-Frame.svg" class="icon"></a>
+
+        
+        <a href="#bio">
+            Biography
+            <img src="img/Heart-Floral-Frame.svg" class="icon"></a>
+
+        
+        <a href="#skills">
+            Skills
+            <img src="img/Heart-Floral-Frame.svg" class="icon"></a>
+
+        
+        <a href="#contact">
+            Contact
+            <img src="img/Heart-Floral-Frame.svg" class="icon"></a>
      
 
 
@@ -46,7 +65,17 @@
 <!--todo Welcome Section-->
 
 <div id="welcome">
-    Welcome area with some cool JS to come
+    <div class="jumbotron">
+      <h1><em>Hello,</em> my name is Crystal</h1>
+      <p> Here is some text to fill up some space</p>
+      <p> Another paragraph like situation</p>
+      <p>To view my work, click the icons below or continue to scroll down the page.</p>
+      <p>Want to know more about me? Click the game controller or use the side 
+          navigation to check out my bio!
+      </p>
+
+    
+
     <div class="welcome-images">
     
     <img src="img/Heart-Floral-Frame.svg" class="icon">
@@ -58,59 +87,90 @@
     <img src="img/Heart-Floral-Frame.svg" class="icon">
     </div>
 
-
+</div>
 </div>
 <!--todo Portfolio Section-->
 
 
 
-<div style="overflow: hidden;">
-    <svg
-      preserveAspectRatio="none"
-      viewBox="0 0 1200 120"
-      xmlns="http://www.w3.org/2000/svg"
-      style="fill: #21295c; width: 125%; height: 75px; transform: rotate(180deg) scaleX(-1);"
-    >
-      <path d="M1200 120L0 16.48V0h1200v120z" />
-    </svg>
-  </div>
 
-<div id="portfolio" data-sal="slide-up">
+<div id="portfolio" class="offset">
     
     
-    <div class="card">
-        <h3>Project 1</h3>
-        <img src="img/game-controller.svg" class="icon">
-        <p>Some description about the project that spans a few too many lines 
-            and just keeps on going and going and I don't know what to do it just 
-            wont stop but here we are.
+    <div class="card" data-sal="slide-right">
+        <h2>Employee Directory</h2>
+        <br>
+        <img src="img/mockup_ed.jpg" class="project-img">
+        <br>
+        <p>
+            Have you ever wanted to organize your employees in a simple, 
+            easy to read directory? Each employee has their own clickable card 
+            that opens a new popup window with all their contact information! 
+            <br>
+            Keeping everyone's information together has never been easier!
+
         </p>
+
+
+    </div>
+    
+    <br>
+    <div class="card" data-sal="slide-left">
+        <h3>Wheel of Success </h3>
+        <br>
+        <img src="img/mockup_wheel.jpg" class="project-img">
+        <br>
+        <p>
+            This fun, interactive word guessing game features JavaScript at its core. 
+            The user clicks the onscreen keyboard to choose a letter. If the letter is in 
+            the unknown phrase, it will light up and the chosen key becomes disabled. 
+            If the letter is not in the phrase, the user loses a heart icon. 
+            The game ends with a win if the phrase is guessed before running out of heart icons, 
+            or it ends with a loss if the phrase was not correctly guessed before the user 
+            ran out of heart icons. 
+            What do you win as a prize? Some might say it is of the cute and cuddly variety... 
+            Play to find out more. 
+        </p>
+
     </div>
 
-    <div class="card">
-        <h3>Project 2</h3>
-        <img src="img/game-controller.svg" class="icon">
-        <p>Some description about the project that spans a few too many lines 
-            and just keeps on going and going and I don't know what to do it just 
-            wont stop but here we are for a second time.
-        </p>
-    </div>
+    <br>
+    <div class="card" data-sal="slide-right">
 
-    <div class="card">
-            <h3>Project 3</h3>
-            <img src="img/game-controller.svg" class="icon">
-            <p>Some description about the project that spans a few too many lines 
-                and just keeps on going and going and I don't know what to do it just 
-                wont stop but here we are for a third time.
+            <h2>Web App</h2>
+            <br> 
+            <img src="img/mockup_webapp.jpg" class="project-img">
+            <br>
+            <p>
+                Do you want to display some important graphs and/or charts in a stylized, 
+                easy to read manner? This mobile-first responsive website does just that. 
+                Each line chart, bar chart, and donut chart uses several data sets to display 
+                the information in a clear and concise way. The line chart even dynamically 
+                changes the displayed information based on what setting is chosen (Daily, Hourly, etc). 
+                Furthermore, the use of local storage saves settings on the screen that the user inputs, 
+                using toggle switches and a drop down timezone menu. Some fun JavaScript is also at play 
+                with a notification menu and alert banner. 
             </p>
     </div>
     
-    <div class="card">
-        <h3>Project 4</h3>
-        <img src="img/game-controller.svg" class="icon">
-        <p>Some description about the project that spans a few too many lines 
-            and just keeps on going and going and I don't know what to do it just 
-            wont stop but here we are for a fourth time! Oh my.
+    <br>
+    <div class="card" data-sal="slide-left">
+        <h2>Web Style Guide</h2>
+        <br>
+        <img src="img/mockup_webstyle.jpg" class="project-img">
+        <br>
+        <p>
+            Are you a fan of Sass? This well organized project demonstrates the power of Sass! 
+            As a companion to Cascading Style Sheets (CSS), Sass helps implement these styles in 
+            a modular format. Although this project is on the smaller side, a larger project with 
+            multiple team members would benefit from such a modular approach like Sass. 
+            Each section has been broken down into three subcategories: base, components, and utilities. 
+            The Base section includes things like typography and normalizing style sheets for a level 
+            playing field. The Utilities includes variables and mixins - repeatable code to "mix into" 
+            your regular style sheets. Finally, the Components section includes bits and pieces that 
+            make up your website like buttons, form, the overall grid, navigation, and media 
+            queries. It may sound like a bit to take in, but it is actually quite straight-forward 
+            and a very useful tool to be familiar with. 
         </p>
     </div>
 
@@ -118,44 +178,42 @@
 </div>
 <!--todo Bio Section-->
 
-<div style="overflow: hidden;">
-    <svg
-      preserveAspectRatio="none"
-      viewBox="0 0 1200 120"
-      xmlns="http://www.w3.org/2000/svg"
-      style="fill: #21295c; width: 125%; height: 75px; transform: rotate(180deg);"
-    >
-      <path d="M1200 120L0 16.48V0h1200v120z" />
-    </svg>
-  </div>
 
 
-<div id="bio" data-sal="slide-up">
+
+<div id="bio" data-sal="slide-up" class="offset">
     <div class="skew-r"> </div>
+    
     <h2>About Me</h2>
+    <img src="img/game-controller.svg" class="icon center-icon">
     <p>
         Hello, and welcome to my portfolio. My name is Crystal Laing 
-        and I reside on Vancouver Island, B.C.
+        and I reside on Vancouver Island, B.C. 
     </p>
-    <p> I am interested in......</p>
-    <p>I like to do stuff.....</p>
+    <p> I am interested in making beautiful and functional websites.
+        Learning is one of my passions and I love how the tech field offers so many 
+        avenues for continued learning. Whether it is designing websites or filtering through 
+        back-end server code, there is always something new to explore. Aside from web design 
+        and development, I am also intrigued by cyber security. 
+    </p>
+    <p>Aside from the web, I have a strong interest in video games, cooking, and gardening.
+        Some of my favorite games include the Final Fantasy series, Fallout: New Vegas and Fallout 4, 
+        Skyrim, and No Man's Sky, to name a few. I try to cook something new each week, but I do 
+        have my favorites such as Thai green chicken curries, Indian curries, German cuisine, 
+        and Asian delights like teriyaki stirfries or sesame chicken. To keep up with my food 
+        hobby, I also have a garden of various vegetables along with blueberries, strawberries, 
+        and Santa Rosa plums. A perfect day to me includes some productivity, gathering bounty 
+        from the garden, cooking a wonderful meal, and then gaming out with my boyfriend (with snacks, 
+        of course). 
+    </p>
 </div>
 
 
 <!--todo Skills Section-->
-<div style="overflow: hidden;">
-    <svg
-      preserveAspectRatio="none"
-      viewBox="0 0 1200 120"
-      xmlns="http://www.w3.org/2000/svg"
-      style="fill: #21295c; width: 125%; height: 75px; transform: rotate(180deg) scaleX(-1);"
-    >
-      <path d="M1200 120L0 16.48V0h1200v120z" />
-    </svg>
-  </div>
 
 
-<div id="skills" data-sal="slide-up">
+
+<div id="skills" data-sal="slide-up" class="offset">
     <div class="skew-l"> </div>
     <h2>Skills and Education</h2>
     
@@ -188,21 +246,18 @@
 
 </div>
 <!--todo Contact Section-->
-<div style="overflow: hidden;">
-    <svg
-      preserveAspectRatio="none"
-      viewBox="0 0 1200 120"
-      xmlns="http://www.w3.org/2000/svg"
-      style="fill: #21295c; width: 125%; height: 75px; transform: rotate(180deg);"
-    >
-      <path d="M1200 120L0 16.48V0h1200v120z" />
-    </svg>
-  </div>
 
-<div id="contact" data-sal="slide-up">
+
+<div id="contact" data-sal="slide-up" class="offset">
     <div class="skew-r"> </div>
     <h2>Contact Me</h2>
-    <p>The best way to contact me is through email...</p>
+    <p>The best way to contact me is through email: <strong>email@email.com</strong></p>
+    <p>Call or text: 555-555-5555</p>
+    <p>Or send a letter, <br>
+    Crystal Laing <br>
+    123 Street Address <br>
+    City Name, Postal Code <br>
+    Canada</p>
 </div>
 
     

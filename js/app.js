@@ -17,7 +17,7 @@
 ==================================================================*/
 
 
-/* slide-up animation for each section */
+/* slide animation for each section */
 sal();
 
 
