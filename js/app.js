@@ -17,6 +17,7 @@
 /* slide animation for each section */
 sal();
 
+/* lightbox plugin for sample photos */
 baguetteBox.run('.gallery');
 
 
