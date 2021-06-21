@@ -13,6 +13,13 @@ cg blue 1c7293 (lighter accent: [header, nav, footer BG], list item)
 alice blue e6ebef (lighter than the grey)
 white (accent: text)
 
+
+Pink Theme (girl at desk image)
+soft pink #FAE7F0
+purple #AF9DF8
+bright pink hair #FC96E3
+blue accent #0029FA
+
 ===========================*/
 
 
@@ -39,12 +46,12 @@ body {
 /* utilities */
 
 h1 {
-    color: white;
+    color: #FC96E3;
 }
 
 h2 {
     font-family: 'Exo 2', sans-serif;
-    color: #21295c;
+    color: #FC96E3;
     padding: 5px;
 }
 
@@ -56,13 +63,13 @@ p {
 /* links */
 a,
 a:visited {
-    color: #065a82;
+    color: #FC96E3;
 
 }
 
 a:hover {
     color: white;
-    background-color: rgba(28, 114, 147, 0.4);
+    background-color: rgba(133, 204, 232, 0.4);
     border-radius: 5px;
     text-decoration: none;
 }
@@ -70,8 +77,10 @@ a:hover {
 nav a,
 nav a:visited, 
 nav a:hover {
-    color: white;
+    color: #FC96E3;
     text-decoration: none;
+    padding-left: 15px;
+
 }
 
 /* offset navigation target */
@@ -124,16 +133,21 @@ a.offset {
 
 header {
     grid-area: head;
-    background-color: #1c7293;
-    color: white;
+    background-color: #FAE7F0;
+    color: #FC96E3;
     
 }
 
 nav {
     grid-area: nav;
-    background-color: #1c7293;
-    color: white;
+    background-color: #FAE7F0;
+    color: #FC96E3;
+    text-align: right;
+    padding-right: 15px;
+    
 }
+
+
 
 /*==================================
     Main Content
@@ -153,17 +167,17 @@ main {
 
 .jumbotron {
     max-height: 300px;
-    background: url(../img/banner.jpg);
+    /* background: url(../img/banner.jpg); */
+    background-color: #8AC7DC;
     margin-top: 0;
     padding-top: 50px;
     text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
 
 }
 
-.jumbotron h1 {
-    margin: 0;
-    line-height: 1.5rem;
-}
+
 
 .welcome-images {
     display: flex;
@@ -187,6 +201,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     
 }
 
@@ -221,22 +236,22 @@ ul.skills {
   .skills li {
     border-radius: 6px;
     display: inline-block;
-    background: #065a82;
+    background: #AF9DF8;
     color: white;
     padding: 5px 10px;
     margin: 2px;
   }
 
 .skills li:nth-child(odd) {
-    background: #21295c;
+    background: #0029FA;
   }
 
 
 
 footer {
     grid-area: footer;
-    background-color: #1c7293;
-    color: white;
+    background-color: #FAE7F0;
+    color: #FC96E3;
     height: 50px;
     margin-top: auto;
 }
@@ -251,6 +266,24 @@ Media Queries for Tablet and Desktop views
 /* --------------------------- 700px+ Wide Screens */
 
 @media screen and (min-width: 700px){
+
+    .jumbotron h1 {
+        margin: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        
+        font-size: 3rem;
+        padding-top: 5px;
+    }
+    
+    .jumbotron p {
+        padding-top: 30px;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+
     .card {
         width: calc(50% - 20px); 
     }
@@ -271,8 +304,8 @@ Media Queries for Tablet and Desktop views
         display: grid;
         grid-template-columns: 80px 1fr; /* nav is 80px, main is 1fr */
         grid-template-rows: 30px 1fr; /*header is 30px, rest is 1fr */
-        grid-template-areas: "head head"
-                             "nav main"
+        grid-template-areas: "head nav"
+                             "main main"
                              "footer footer";
 
     }
@@ -311,7 +344,7 @@ Media Queries for Tablet and Desktop views
     .project-img {
         width: 400px;
         height: auto;
-        box-shadow: 5px 5px #1c7293;
+        box-shadow: 5px 5px #FC96E3;
         margin: 0 auto;
     }
 
