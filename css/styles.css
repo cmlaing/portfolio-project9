@@ -170,7 +170,7 @@ main {
     /* background: url(../img/banner.jpg); */
     background-color: #8AC7DC;
     margin-top: 0;
-    padding-top: 50px;
+    padding-top: 0;
     text-align: center;
     max-width: 100%;
     overflow-x: hidden;
@@ -211,6 +211,23 @@ main {
     flex-wrap: wrap;
     max-width: 100%;
     padding: 0.5rem;
+}
+
+.gallery {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, min-content));
+    grid-gap: 10px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+.thumbnail {
+    max-width: 300px;
+    height: auto;
+    padding-right: 10px;
 }
 
 #bio,

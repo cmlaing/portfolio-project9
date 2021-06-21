@@ -12,8 +12,9 @@
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/sal.css">
-   
+    
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/baguetteBox.css">
 
 </head>
 <body>
@@ -28,29 +29,29 @@
 </header>
     <!-- todo Navigation -->
     
-    <nav>
-  
-        <a href="#portfolio">
-            Portfolio
-           </a>
-
-        
-        <a href="#bio">
-            Biography
-            </a>
-
-        
-        <a href="#skills">
-            Skills
-            </a>
-
-        
-        <a href="#contact">
-            Contact
-            </a>
-     
+        <nav class="selector">
     
-</nav> 
+            <a href="#portfolio">
+                Portfolio
+            </a>
+
+            
+            <a href="#bio">
+                Biography
+                </a>
+
+            
+            <a href="#skills">
+                Skills
+                </a>
+
+            
+            <a href="#contact">
+                Contact
+                </a>
+            
+        </nav> 
+    
 <main>
 <!--todo Welcome Section-->
 
@@ -80,7 +81,6 @@
 
 </div>
 <!--todo Portfolio Section-->
-
 
 
 
@@ -143,9 +143,28 @@
                 with a notification menu and alert banner. 
             </p>
     </div>
-    
+
+
     <br>
     <div class="card" data-sal="slide-left">
+
+            <h2>Online Registration</h2>
+            <br> 
+            <img src="img/mockup_form.jpg" class="project-img">
+            <br>
+            <p>
+                Do you have a subscription service that requires the use 
+                of forms? Or how about collecting user input to create a profile 
+                or custom experience? A form can do just that! This organized, 
+                easy to read form has areas for user input such as name, email, 
+                and address, as well as options to check for preferred 
+                newsletter input or content. 
+            </p>
+    </div>
+
+    
+    <br>
+    <div class="card" data-sal="slide-right">
         <h2>Web Style Guide</h2>
         <br>
         <img src="img/mockup_webstyle.jpg" class="project-img">
@@ -165,7 +184,27 @@
         </p>
     </div>
 
+    <br>
+    <div class="gallery card" data-sal="slide-up">
 
+        <a href="img/webapp.png" data-caption="Web App Example">
+            <img src="img/webapp.png" alt="Web App" class="thumbnail"> </a>
+
+        <a href="img/webstyleguide.png" data-caption="Web Style Guide Example">
+            <img src="img/webstyleguide.png" alt="Web Style Guide" class="thumbnail"> </a>
+
+        <a href="img/wheelofsuccess.png" data-caption="Wheel of Success Example">
+            <img src="img/wheelofsuccess.png" alt="Wheel of Success" class="thumbnail"> </a>
+    
+         <a href="img/employeedirectory.png" data-caption="Employee Directory Example">
+            <img src="img/employeedirectory.png" alt="employee directory" class="thumbnail"> </a>
+
+        <a href="img/form.png" data-caption="Form Example">
+            <img src="img/form.png" alt="form" class="thumbnail"> </a>
+
+    </div>
+
+<br>
 </div>
 <!--todo Bio Section-->
 
@@ -264,7 +303,11 @@
 </div>
 <script src="js/sal.js"></script>
 
-
 <script src="js/app.js"></script>
+<script>
+    window.addEventListener('load', function() {
+      baguetteBox.run('.gallery');
+    });
+    </script>
 </body>
 </html>

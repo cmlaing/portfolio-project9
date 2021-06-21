@@ -8,17 +8,20 @@
     Execute in this file by running: sal();
     and including sal.js, sal.css
 
-    2. Rotation/Animation for imaages at top of screen
-
-    3. Popup window for images at top of screen when clicked
-    
-    4. Popup window for portfolio cards when clicked
+    2. Gallery JS 
+    uses baquetteBox as the lightbox plugin from https://github.com/feimosi/baguetteBox.js/
 
 ==================================================================*/
 
 
 /* slide animation for each section */
 sal();
+
+baguetteBox.run('.gallery');
+
+
+
+
 
 
 
