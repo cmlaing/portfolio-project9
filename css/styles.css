@@ -5,7 +5,7 @@ Mobile-first Design Layout for Project 9 Treehouse "Capstone Portfolio"
 */
 
 /*===========================
-Color Palette 
+Color Palette Options
 space cadet 21295c (dark indigo)
 light gray cccccc (main background)
 blue saphire 065a82 (darker accent: list item)
@@ -68,11 +68,20 @@ a:visited {
 }
 
 a:hover {
-    color: white;
-    background-color: rgba(133, 204, 232, 0.4);
-    border-radius: 5px;
     text-decoration: none;
 }
+
+a.github {
+    background-image: url(img/github.svg);
+  }
+
+.github {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+}
+
+
 
 nav a,
 nav a:visited, 
@@ -128,6 +137,7 @@ a.offset {
                          "nav"
                          "main"
                          "footer";
+   
 
 }
 
@@ -217,7 +227,7 @@ main {
     display: grid;
     max-width: 1000px;
     grid-template-columns: repeat(auto-fit, minmax(200px, min-content));
-    grid-gap: 10px;
+    grid-gap: 20px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -227,7 +237,9 @@ main {
 .thumbnail {
     max-width: 300px;
     height: auto;
-    padding-right: 10px;
+    padding: 15px;
+    margin: 15px;
+    
 }
 
 #bio,
